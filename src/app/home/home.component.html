@@ -1,0 +1,9 @@
+<div *projector="let item; from: items; let ctrl = controller">
+  <div>Kind: {{ item.kind }}</div>
+  <div>{{ item.title }}</div>
+  <div>{{ item.answers[0].title }}</div>
+  <footer>
+    <button (click)="ctrl.prev()"></button>
+    <button (click)="ctrl.next()"></button>
+  </footer>
+</div>
