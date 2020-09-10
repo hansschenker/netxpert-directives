@@ -1,0 +1,13 @@
+<div *carousel="let image; from: items; let ctrl = controller">
+  <img [src]="image.url" [alt]="image.title" />
+  <p>{{ image.title }}</p>
+  <footer>
+    <button (click)="ctrl.prev()"><-</button>
+    <button (click)="ctrl.next()">-></button>
+    <button (click)="ctrl.auto()">auto</button>
+    <span *ngIf="ctrl.car().autoplay">Auto: {{ ctrl.car().autoplay }} </span>
+  </footer>
+  <!-- <pre>
+    <ng-content></ng-content>
+  </pre> -->
+</div>

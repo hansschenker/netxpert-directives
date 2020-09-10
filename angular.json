@@ -144,6 +144,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "netxpert-directives"
+    }
+  },
+  "defaultProject": "netxpert-directives",
+  "cli": {
+    "analytics": "f3cb10ed-6fc8-4503-9cca-dcdee18a9682"
+  }
 }

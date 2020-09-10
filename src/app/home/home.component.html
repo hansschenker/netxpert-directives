@@ -1,4 +1,4 @@
-<div *projector="let item; from: items; let ctrl = controller">
+<!-- <div *projector="let item; from: items; let ctrl = controller">
   <div>Kind: {{ item.kind }}</div>
   <div>{{ item.title }}</div>
   <div>{{ item.answers[0].title }}</div>
@@ -6,4 +6,6 @@
     <button (click)="ctrl.prev()"></button>
     <button (click)="ctrl.next()"></button>
   </footer>
-</div>
+</div> -->
+<h3>Home</h3>
+<router-outlet></router-outlet>
